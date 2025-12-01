@@ -1,7 +1,7 @@
 Nous décrirons ici les données et méthodes utilisées dans le cadre du rendu intermédiaire.
 
 Liens vers les différentes parties :
-- [Corpus des méthodologies des notations ESG](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/main/Rendu%20interm%C3%A9diaire.md#donn%C3%A9es-du-corpus-des-m%C3%A9thodologies-des-notations-esg)
+- [Corpus des méthodologies des notations ESG](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/main/Rendu%20interm%C3%A9diaire.md#donn%C3%A9es-du-corpus-des-m%C3%A9thodologies-des-notations-esg)
 - [AJOUTER PARTIE FREDDY]
 
 ## Données du corpus des méthodologies des notations ESG
