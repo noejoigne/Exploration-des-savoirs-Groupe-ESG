@@ -1,3 +1,6 @@
+ATTENTION CETTE PAGE EST ENCORE EN COURS DE REDACTION !!!
+
+
 Nous décrirons ici les données et méthodes utilisées dans le cadre du rendu intermédiaire.
 
 Liens vers les différentes parties :
