@@ -1,11 +1,8 @@
-ATTENTION CETTE PAGE EST ENCORE EN COURS DE REDACTION !!!
-
-
 Nous décrirons ici les données et méthodes utilisées dans le cadre du rendu intermédiaire.
 
 Liens vers les différentes parties :
 - [Corpus des méthodologies des notations ESG](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/main/Rendu%20interm%C3%A9diaire.md#donn%C3%A9es-du-corpus-des-m%C3%A9thodologies-des-notations-esg)
-- [AJOUTER PARTIE FREDDY]
+- [PARTIE FREDDY EN COURS D'AJOUT]
 
 ## Données du corpus des méthodologies des notations ESG
 **1) Format des données**
@@ -81,4 +78,58 @@ Conversion en échelle 0–100 selon la règle suivante :
 |B|21.43|```=ARRONDI(100*3/14;2)```|
 |CCC|7.14|```=ARRONDI(100*1/14;2)```|
 
-![Image](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/Rendu-interm%C3%A9diaire/Normalisation_MSCI.png) 
+Ce choix de normalisation a été fait comme l'expliquent les schémas suivants :
+
+| ![Image_expliquant_choix_normalisation_MSCI](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/Rendu-interm%C3%A9diaire/Normalisation_MSCI_V2.png)  | ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMREiqmWXzIIL5zVrwSjt-kXM9nlo_pXyN4BTLkMRNC4w5-WI) |
+|:-----:|:-----------:|
+|Schéma résumant la traduction des notes|Données de traduction des notes fournis par MSCI|
+
+
+**5) ACP réalisée sur les données normalisées**  
+Le code utilisé pour l’ACP est le suivant :
+```python
+import pandas as pd
+import numpy as np
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv("ESG_DATA_V4.csv", sep=";", decimal=",")
+cols = ["SNP_normalized", "Sustainalytics_normalized", "MSCI_normalized"]
+data = df[cols].copy()
+
+scaler = StandardScaler()
+X = scaler.fit_transform(data)
+
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X)
+
+explained = pca.explained_variance_ratio_
+print("Variance expliquée (PC1, PC2):", explained)
+print("Variance cumulée (2 PC):", explained.sum())
+
+loadings = pca.components_.T  # shape (n_features, n_components)
+loadings_df = pd.DataFrame(loadings, index=cols, columns=["PC1","PC2"])
+print("\nLoadings (poids des agences dans PC1 et PC2) :\n", loadings_df)
+
+contrib = (loadings**2) / np.sum(loadings**2, axis=0) * 100
+contrib_df = pd.DataFrame(contrib, index=cols, columns=["PC1_pct","PC2_pct"])
+print("\nContributions relatives des variables (%) :\n", contrib_df.round(1))
+
+plt.figure(figsize=(9,7))
+plt.scatter(X_pca[:,0], X_pca[:,1], alpha=0.7)
+for i, idx in enumerate(df['ID'].astype(str)):
+    plt.text(X_pca[i,0], X_pca[i,1], idx, fontsize=8, alpha=0.8)
+arrow_scale = 2.5  
+for i, colname in enumerate(cols):
+    plt.arrow(0, 0, loadings[i,0]*arrow_scale, loadings[i,1]*arrow_scale,
+              color='r', width=0.005, head_width=0.08)
+    plt.text(loadings[i,0]*arrow_scale*1.15, loadings[i,1]*arrow_scale*1.15,
+             colname, color='r', fontsize=11)
+plt.axhline(0, color='gray', linewidth=0.5)
+```
+
+**6) ACP réalisée sur les données normalisées**  
+Les résultats détaillés sont présentés dans le rendu intermédiaire.  
+Pour obtenir l’intégralité des données ou les scripts complets, vous pouvez me contacter : [noe.joigne@sciencespo.fr](mailto:noe.joigne@sciencespo.fr).
