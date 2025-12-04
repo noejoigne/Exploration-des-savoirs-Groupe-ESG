@@ -85,7 +85,8 @@ Ce choix de normalisation a été fait comme l'expliquent les schémas suivants 
 |Schéma résumant la traduction des notes|Données de traduction des notes fournis par MSCI|
 
 
-**5) ACP réalisée sur les données normalisées**  
+**5) ACP réalisée sur les données normalisées**
+
 Le code utilisé pour l’ACP est le suivant :
 ```python
 import pandas as pd
@@ -130,6 +131,7 @@ for i, colname in enumerate(cols):
 plt.axhline(0, color='gray', linewidth=0.5)
 ```
 
-**6) ACP réalisée sur les données normalisées**  
+**6) ACP réalisée sur les données normalisées**
+
 Les résultats détaillés sont présentés dans le rendu intermédiaire.  
 Pour obtenir l’intégralité des données ou les scripts complets, vous pouvez me contacter : [noe.joigne@sciencespo.fr](mailto:noe.joigne@sciencespo.fr).
