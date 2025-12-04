@@ -80,3 +80,5 @@ Conversion en échelle 0–100 selon la règle suivante :
 |BB|35.71|```=ARRONDI(100*5/14;2)```|
 |B|21.43|```=ARRONDI(100*3/14;2)```|
 |CCC|7.14|```=ARRONDI(100*1/14;2)```|
+
+![Image](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/Rendu-interm%C3%A9diaire/Normalisation_MSCI.png) 
