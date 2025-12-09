@@ -2,6 +2,7 @@ Nous décrirons ici les données et méthodes utilisées dans le cadre du rendu 
 
 Liens vers les différentes parties :
 - [Corpus des méthodologies des notations ESG](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/main/Rendu%20interm%C3%A9diaire.md#donn%C3%A9es-du-corpus-des-m%C3%A9thodologies-des-notations-esg)
+- [Corpus scientifique]
 
 ## Données du corpus des méthodologies des notations ESG
 **1) Format des données**
@@ -134,3 +135,24 @@ plt.axhline(0, color='gray', linewidth=0.5)
 
 Les résultats détaillés sont présentés dans le rendu intermédiaire.  
 Pour obtenir l’intégralité des données ou les scripts complets, vous pouvez me contacter : [noe.joigne@sciencespo.fr](mailto:noe.joigne@sciencespo.fr).
+
+## Données du corpus scientifique
+
+Pour pouvoir cerner au mieux la littérature scientifique traitant de notre sujet, nous avons constitué un corpus d'articles grâce à Scopus. Ensuite nous avons étudié ce corpus grâce à l'outil de visualisation VosViewer. Ici, nous proposons d'expliciter les requêtes et les paramètres utilisés dans notre enquête pour assurer la reproductibilité de notre travail.
+
+**1) Requêtes Scopus**
+
+Requête n°1 : REFEID ( 2-s2.0-84926526604 ), effectué le 29/11/2025 
+
+    ==> Cette requête a pour but de créer un corpus constitué des articles qu'ont été écrits dans le sillage de Chatterji et al. (2016), l'article pionnier sur lé débat des divergences des notations ESG. Cela nous permettra de distinguer quels sont disciplines ou auteurs traitent de ce sujet et des enjeux liés à la question des divergences des notations.
+
+**2) Graphes VosViewer**
+
+Graphe n°1 : 
+
+| Map Base          | File             | Type of analysis | Unit of analysis   | Counting Method | Threshold | Number of cited references | Keep |
+|:-----------------:|:----------------:|:----------------:|:-------------------:|:----------------:|:---------:|:----------------------------:|:----:|
+| Bibliographic Data | Scopus Requête Scopus n°1 | Co-citation      | Cited References    | Full Counting    | 20        | 21                           | All  |
+
+<img width="1896" height="1186" alt="Graphe n°1" src="https://github.com/user-attachments/assets/cb57571b-5c61-4ac3-9d1a-4bf3ef78abaf" />
+
