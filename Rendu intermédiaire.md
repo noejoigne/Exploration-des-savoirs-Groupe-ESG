@@ -2,7 +2,7 @@ Nous décrirons ici les données et méthodes utilisées dans le cadre du rendu 
 
 Liens vers les différentes parties :
 - [Corpus des méthodologies des notations ESG](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/main/Rendu%20interm%C3%A9diaire.md#donn%C3%A9es-du-corpus-des-m%C3%A9thodologies-des-notations-esg)
-- [Corpus scientifique]
+- [Corpus scientifique] (https://github.com/freddyock/Exploration-des-savoirs-Groupe-ESG/blob/patch-1/Rendu%20interm%C3%A9diaire.md#donn%C3%A9es-du-corpus-scientifique)
 
 ## Données du corpus des méthodologies des notations ESG
 **1) Format des données**
