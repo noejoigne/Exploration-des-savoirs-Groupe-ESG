@@ -144,5 +144,9 @@ plt.axhline(0, color='gray', linewidth=0.5)
 Les résultats détaillés sont présentés dans le rendu final (Figures 1, 2 et 3 de l'annexe).  
 Pour obtenir l’intégralité des données ou les scripts complets, vous pouvez me contacter : [noe.joigne@sciencespo.fr](mailto:noe.joigne@sciencespo.fr).
 
+### OBJECTIF 2 : Comprendre la divergence
+
+
+
 
 
