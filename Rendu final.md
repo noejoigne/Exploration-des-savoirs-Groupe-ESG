@@ -1,15 +1,9 @@
-# 🚧 Page en cours de rédaction
+Nous décrirons ici les données et méthodes utilisées dans le cadre du rendu intermédiaire.
 
-Ce dépôt GitHub est mis à jour régulièrement. La finalisation complète de la documentation est prévue pour le **24 mai 2026**.
-
-### 🔍 Aperçu du projet
-En attendant la version finale, nous vous invitons à consulter les données déjà disponibles :
-
-👉 **[Consulter le Rendu intermédiaire](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/blob/main/Rendu%20interm%C3%A9diaire.md)**
-
-*Dernière mise à jour : Mai 2026*
-
----
+Liens vers les différentes parties :
+* [Analyse du corpus des méthodologies des notations ESG](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/edit/main/Rendu%20final.md#analyse-du-corpus-des-m%C3%A9thodologies-des-notations-esg)
+  * [OBJECTIF 1 : Montrer la divergence](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/edit/main/Rendu%20final.md#objectif-1--montrer-la-divergence)
+  * [OBJECTIF 2 : Comprendre la divergence](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/edit/main/Rendu%20final.md#objectif-1--montrer-la-divergence)
 
 ## Analyse du corpus des méthodologies des notations ESG
 ### OBJECTIF 1 : Montrer la divergence
