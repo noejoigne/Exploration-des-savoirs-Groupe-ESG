@@ -131,7 +131,7 @@ for i, colname in enumerate(cols):
 plt.axhline(0, color='gray', linewidth=0.5)
 ```
 
-**6) ACP réalisée sur les données normalisées**
+**6) Résultats et conclusion**
 
 Les résultats détaillés sont présentés dans le rendu intermédiaire.  
 Pour obtenir l’intégralité des données ou les scripts complets, vous pouvez me contacter : [noe.joigne@sciencespo.fr](mailto:noe.joigne@sciencespo.fr).
