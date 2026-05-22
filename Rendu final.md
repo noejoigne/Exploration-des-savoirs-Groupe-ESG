@@ -3,7 +3,7 @@ Nous décrirons ici les données et méthodes utilisées dans le cadre du rendu 
 Liens vers les différentes parties :
 * [Analyse du corpus des méthodologies des notations ESG](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/edit/main/Rendu%20final.md#analyse-du-corpus-des-m%C3%A9thodologies-des-notations-esg)
   * [OBJECTIF 1 : Montrer la divergence](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/edit/main/Rendu%20final.md#objectif-1--montrer-la-divergence)
-  * [OBJECTIF 2 : Comprendre la divergence](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/edit/main/Rendu%20final.md#objectif-1--montrer-la-divergence)
+  * [OBJECTIF 2 : Comprendre la divergence](https://github.com/noejoigne/Exploration-des-savoirs-Groupe-ESG/edit/main/Rendu%20final.md#objectif-2--comprendre-la-divergence)
 
 ## Analyse du corpus des méthodologies des notations ESG
 ### OBJECTIF 1 : Montrer la divergence
